@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <title>Menu</title>
+</head>
+<body>
+    <div id="header">
+        <p class="logo-header"><img src="/image/logo.png" alt=""></p>
+        <ul class="nav-items">
+            <li><a href="http://localhost:3000/home">Trang Chủ</a></li>
+            <li style="background-color: brown;"><a href="http://localhost:3000/menu">Menu</a></li>
+            <li><a href="http://localhost:3000/booking">Booking</a></li>
+            <li><a href="http://localhost:3000/monitor">Theo dõi lịch đặt</a></li>
+            <li><a href="http://localhost:3000/login">Quản Lý</a></li>
+        </ul>
+    </div>
+    <!---->
+   <div class="item text-center">
+     <img src="/image/imagebooking.PNG" alt="">
+   </div >
+
+  <hr class="Underline">
+  <!---->
+  <div style="text-align: center;margin: 15px 0;"><h1>DANH SÁCH MÓN ĂN NHÀ HÀNG</h1></div>
+  <div id="body-menu">
+    <!-- <ul class="Column-Menu-1">
+        <% for(let i=0; i < dataMenu.length; i++) { %>
+        <li><img src="<%= dataMenu[i].PNG %>" alt=""><p><%= dataMenu[i].Name %>..........<%= dataMenu[i].Cost %></span></p></li>
+        <% } %>
+    </ul> -->
+    <table style="margin: 10px 50px 10px 100px">
+        <thead>
+            <tr>
+            <th>Tên Món Ăn</th>
+            <th>Hình Ảnh</th>
+            <th>Mô Tả Chi Tiết</th>
+            <th>Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i=0; i < dataMenu.length; i++) { %>   
+            <tr>
+                <!-- <td width=300px><%= dataMenu[i].Name %></td>
+                <td height=150px width=200px><img height=150px width=200px src="<%=dataMenu[i].PNG %>" alt=""></td>
+                <td><%= dataMenu[i].Detail %></td>
+                <td width=300px><%= dataMenu[i].Cost %></td> -->
+                <td width=300px><%= dataMenu[i].Name %></td>
+                <td height=150px width=200px><img height=150px width=200px src="<%=dataMenu[i].PNG %>" alt=""></td>
+                <td width=550px><%= dataMenu[i].Detail %></td>
+                <td width=200px><%= dataMenu[i].Cost %></td>
+            </tr>
+            <% } %>
+        </tbody>
+      </table>
+
+  </div>
+
+
+  <hr class="Underline"> 
+
+
+  <div id="contact">
+      <p class="contact-text">CONTACT</p>
+      <div class="icon-contact">
+      
+          <div class="icon-telephone">
+              <a href=""><img class="icon" src="/image/icon-phone.jpg" alt=""></a>
+              <h2>HOTLINE</h2>
+              <h2>0902 988 232</h2>
+          </div>
+
+          <div class="icon-address">
+              <a href=""><img class="icon" src="/image/icon-address.jpg" alt=""></a>
+              <h2>ADDRESS</h2>
+              <h2>232 Phan Đình Phùng</h2>
+          </div>
+
+          <div class="icon-facebook">
+              <a href="https://www.google.com/"><img class="icon" src="/image/icon-fb.png"></a>
+              <h2>FACEBOOK</h2>
+              <h2>Ếch Xanh Quãng Ngã</h2>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
