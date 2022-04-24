@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/nghieu372001/Deloy-Web/issues"
   },
-  "homepage": "https://github.com/nghieu372001/Deloy-Web#readme",
+  "homepage": "https://demo--webfood.herokuapp.com/home",
   "dependencies": {
     "@babel/core": "7.15.5",
     "@babel/node": "7.15.4",
